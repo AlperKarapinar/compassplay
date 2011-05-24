@@ -6,9 +6,14 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="bp two-col">
+<div id="container">
+  <div id="header">CompassPlay!<div>
+  <div id="sidebar">navigation here</div>
+  <div id="content">
+    <%= yield %>
+  </div>
+  <div id="footer">footer!</div>
+</div>
 </body>
 </html>
